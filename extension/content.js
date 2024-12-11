@@ -49,8 +49,8 @@ document.querySelector("body > div.wrap > div.container.clearfix.formrap > div.c
 document.querySelector("#bikoa").value = "システムセキュリティ研究室";
 document.querySelector("#bikob").value = "クラブ、サークル名（なかったら空欄）";
 const email = "メールアドレス"
-const firstemail = "メールアドレス１(＠まで）";
-const secondemail = "メールアドレス２";
+const firstemail = email.split("@")[0];
+const secondemail = email.split("@")[1];
 document.querySelector("body > div.wrap > div.container.clearfix.formrap > div.contents_area > form:nth-child(6) > dl > div:nth-child(28) > dd > span > span:nth-child(1) > div:nth-child(1) > div > div > input").value = firstemail;
 document.querySelector("body > div.wrap > div.container.clearfix.formrap > div.contents_area > form:nth-child(6) > dl > div:nth-child(28) > dd > span > span:nth-child(1) > div:nth-child(3) > div > div > input").value = secondemail;
 document.querySelector("body > div.wrap > div.container.clearfix.formrap > div.contents_area > form:nth-child(6) > dl > div:nth-child(28) > dd > span > span:nth-child(3) > div:nth-child(1) > div > div > input").value = firstemail;
