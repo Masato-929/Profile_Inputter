@@ -2,19 +2,14 @@
   "name": "Profile_Inputter",
   "version":"1.0.0",
   "manifest_version": 3,
-  "content_scripts":[
-   { "matches":[
-      "*://*/*"
-    ],
-    "js":[
-      "./content.js"
-    ],
-    "run_at":"document_end"
-  }
-
-  ],
   "background":{
     "service_worker":"background.js"
-  }
+  },
+  "action":{
+
+  },
+  "permissions":[
+    "scripting","activeTab"
+  ]
 
 }
