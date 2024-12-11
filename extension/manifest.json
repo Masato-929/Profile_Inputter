@@ -9,7 +9,10 @@
 
   },
   "permissions":[
-    "scripting","activeTab"
+    "scripting","activeTab","tabs"
+  ],
+    "host_permissions": [
+    "https://*/*"
   ]
 
 }
