@@ -25,6 +25,8 @@ if (location.href.includes('i-webs.jp')) {
       )
       .querySelector('.formbox02');
   };
+  findList('漢字氏名').querySelectorAll('input')[0].value = familyName;
+  findList('漢字氏名').querySelectorAll('input')[1].value = personalName;
   //   document.querySelector(
   //     'body > div.wrap > div.container.clearfix.formrap > div.contents_area > form:nth-child(6) > dl > div:nth-child(2) > dd > span > span:nth-child(1) > div > div > div > input'
   //   ).value = familyName;
@@ -65,7 +67,7 @@ if (location.href.includes('i-webs.jp')) {
   ][1].querySelector('span').innerText = graduateYear.split('/')[1];
   [
     ...findList('卒業').querySelectorAll('.jqTransformSelectWrapper'),
-  ][1].querySelector('span').innerText = '卒業（修了）見込み';
+  ][2].querySelector('span').innerText = '卒業（修了）見込み';
   //   const BunkeiRadio = document.querySelector(
   //     'body > div.wrap > div.container.clearfix.formrap > div.contents_area > form:nth-child(6) > dl > div:nth-child(7) > dd > span:nth-child(1) > a'
   //   );
