@@ -1,18 +1,34 @@
 {
   "name": "Profile_Inputter",
-  "version":"1.0.0",
+  "version": "1.0.0",
   "manifest_version": 3,
-  "background":{
-    "service_worker":"background.js"
+  "background": {
+    "service_worker": "background.js"
   },
-  "action":{
-
-  },
-  "permissions":[
-    "scripting","activeTab","tabs"
+  "action": {},
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs"
   ],
-    "host_permissions": [
+  "host_permissions": [
     "https://*/*"
-  ]
-
+  ],
+  "env": {
+    "familyName": "苗字",
+    "presonalName": "名前",
+    "familyName_kana": "ミョウジ",
+    "personalName_kana": "ナマエ",
+    "isMan": true,
+    "graduateYear": "2026/03",
+    "birthDay": "1991/02/03",
+    "postCode": "111-1111",
+    "prefecture": "大阪府",
+    "cityTown": "〇〇市〇〇町番地",
+    "homePhoneNumber": "0000-0000-0000",
+    "mobilePhoneNumber": "000-0000-0000",
+    "labo": "システムセキュリティ研究室",
+    "circle": "",
+    "email": "k00000@kansai-u.ac.jp"
+  }
 }
