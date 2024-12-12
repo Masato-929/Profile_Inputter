@@ -118,10 +118,17 @@ if (location.href.includes('i-webs.jp')) {
   findList('番地').querySelector('input').value = cityTown;
 
   [...findList('電話番号').querySelectorAll('input')][0].value =
-    mobilePhoneNumber.split('-')[0];
+    homePhoneNumber.split('-')[0];
   [...findList('電話番号').querySelectorAll('input')][1].value =
-    mobilePhoneNumber.split('-')[1];
+    homePhoneNumber.split('-')[1];
   [...findList('電話番号').querySelectorAll('input')][2].value =
+    homePhoneNumber.split('-')[2];
+
+  [...findList('携帯').querySelectorAll('input')][0].value =
+    mobilePhoneNumber.split('-')[0];
+  [...findList('携帯').querySelectorAll('input')][1].value =
+    mobilePhoneNumber.split('-')[1];
+  [...findList('携帯').querySelectorAll('input')][2].value =
     mobilePhoneNumber.split('-')[2];
 
   [...document.querySelectorAll('.formbox')]
@@ -147,12 +154,12 @@ if (location.href.includes('i-webs.jp')) {
   }
 
   //学校の選択ボタンを押したタイミングでこれを実行する
-  //   document
-  //     .querySelector('#gkinfoid > div.formbox02schoolbtn > span > input')
-  //     .addEventListener('click', () => {
-  //       chrome.runtime.sendMessage({
-  //         message: 'school load',
-  //       });
-  //     });
+  document
+    .querySelector('#gkinfoid > div.formbox02schoolbtn > span > input')
+    .addEventListener('click', () => {
+      chrome.runtime.sendMessage({
+        message: 'school load',
+      });
+    });
 } else if (location.href.includes('job.axol')) {
 }
